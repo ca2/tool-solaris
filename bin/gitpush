@@ -1,0 +1,5 @@
+#!/bin/sh
+
+git submodule foreach "git add . && git commit -F ~/dedicatory.txt && git push"
+
+

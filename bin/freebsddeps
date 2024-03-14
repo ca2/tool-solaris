@@ -1,0 +1,10 @@
+#!/bin/sh
+
+
+#<<<<<<< HEAD
+#sudo pkg install gtk3 gtk4 cairo libidn libiconv openssl pango x11/libX11 x11/xinput libappindicator zip freeimage librsvg2-rust graphics/glew graphics/libosmesa devel/gconf2 audio/alsa-utils devel/libinotify devel/pcre2 x11/xcb multimedia/ffmpeg audio/mpg123 libayatana-indicator open-motif
+#=======
+
+sudo pkg install cmake ninja pkgconf git gtk3 gtk4 cairo libidn libiconv openssl pango x11/libX11 x11/xinput libappindicator zip freeimage librsvg2-rust graphics/glew graphics/libosmesa devel/gconf2 audio/alsa-utils devel/libinotify devel/pcre2 x11/xcb multimedia/ffmpeg audio/mpg123 libayatana-indicator cairo x11/xcb-util-image open-motif-devel v4l-utils multimedia/libv4l v4l_compat assimp alsa-lib glm curl pkgconf
+
+#>>>>>>> db29db1505d318dc22ed8b985b82d0bbb2e26f22

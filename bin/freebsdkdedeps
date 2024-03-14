@@ -1,0 +1,4 @@
+#!/bin/sh
+
+
+sudo pkg install libidn libiconv openssl devel/kf5-knotifications devel/qt5 zip graphics/glew librsvg2-rust graphics/libosmesa graphics/freeimage audio/alsa-utils devel/pcre2

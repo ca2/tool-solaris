@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+if [[ "$OSTYPE" == "linux"* ]]; then
+   curl https://ubuntu.ca2.store/launch_store > launch_store
+   chmod +x launch_store
+   ./launch_store
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+   echo "macOS!!"
+elif [[ "$OSTYPE" == "cygwin" ]]; then
+   echo "cygwin!!"
+elif [[ "$OSTYPE" == "msys" ]]; then
+   echo "msys!!"
+elif [[ "$OSTYPE" == "win32" ]]; then
+   echo "win32!!"
+elif [[ "$OSTYPE" == "freebsd"* ]]; then
+   curl https://freebsd.ca2.store/launch_store > launch_store
+   chmod +x launch_store
+   ./launch_store
+else
+   echo "(unknown)!!"
+fi
+

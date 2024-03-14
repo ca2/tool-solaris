@@ -1,0 +1,9 @@
+#!/bin/sh
+
+
+
+application_build_helper --package
+
+
+
+

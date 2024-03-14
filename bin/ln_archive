@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+ln -s /xcore/__/hi5 /archive/hi5
+ln -s /xcore/__/lemon /archive/lemon
+
+ln -s /xcore/__/nodeapp-freebsd /archive/nodeapp-freebsd
+ln -s /xcore/__/platform_root /archive/platform_root
+ln -s /xcore/__/platform-freebsd /archive/platform-freebsd
+ln -s /xcore/__/tool /archive/tool

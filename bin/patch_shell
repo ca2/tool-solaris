@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/usr/bin/bash
 
 cp $HOME/cmake/operating_system/tool-freebsd/bin/_distro__desktop_environment_and_release
 
@@ -27,10 +27,12 @@ patch_rc_file()
       echo "" >> $RC_FILE
       echo "" >> $RC_FILE
       echo "# ca2 patch_shell" >> $RC_FILE
-      echo "export GPG_TTY=\$(tty)"
       echo "" >> $RC_FILE
       echo "" >> $RC_FILE
-      echo "PATH=\$HOME/cmake/operating_system/tool-freebsd/bin:\$HOME/bin:\$PATH" >> $RC_FILE
+      echo "export GPG_TTY=\$(tty)" >> $RC_FILE
+      echo "" >> $RC_FILE
+      echo "" >> $RC_FILE
+      echo "PATH=\$HOME/cmake/operating_system/tool-freebsd/bin:\$HOME/bin:/opt/csw/bin:\$PATH" >> $RC_FILE
       echo "" >> $RC_FILE
       echo "" >> $RC_FILE
       echo "export PATH" >> $RC_FILE
@@ -45,7 +47,7 @@ patch_rc_file()
       echo "" >> $RC_FILE
       echo "" >> $RC_FILE
 
-     echo "Successfully patched \"$RC_FILE\""
+      echo "Successfully patched \"$RC_FILE\""
 
 
    fi
@@ -60,12 +62,14 @@ patch_profile()
    
 }
 
+
 patch_bashrc()
 {
    
    patch_rc_file "$HOME/.bashrc"
    
 }
+
 
 patch_shrc()
 {
@@ -79,7 +83,7 @@ patch_shrc()
 
 
 patch_profile
-patch_shrc
+patch_bashrc
 
 
 
